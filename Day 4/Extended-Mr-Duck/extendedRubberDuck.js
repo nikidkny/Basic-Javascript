@@ -106,7 +106,6 @@ const loadMessages = () => {
     messages.classList.remove("hidden");
     const msgElement = document.createElement("li");
     // Get the date and time from the title attribute for messages in the local storage
-    console.log(msg);
     msgElement.title = msg.title;
     // Update the text content to use the message property
     msgElement.textContent = msg.message;
@@ -130,6 +129,7 @@ const addMessage = () => {
   if (inputValue.trim() !== "") {
     messages.classList.remove("hidden");
     const savedMessages = JSON.parse(localStorage.getItem("messages")) || [];
+    // add a timestamp to the messages
     const currentDate = new Date();
     const formattedDate = `${currentDate.getDate()}/${
       currentDate.getMonth() + 1
