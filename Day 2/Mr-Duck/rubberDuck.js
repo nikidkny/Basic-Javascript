@@ -1,18 +1,18 @@
 const logo = document.getElementById("logo");
-const message = document.getElementById("message");
+const hiddenMessage = document.getElementById("hiddenMessage");
 const messages = document.getElementById("messages");
 
-// function to show the hidden message
+// function to show the hidden hiddenMessage
 const displayHidden = () => {
-  message.classList.remove("hidden");
-  message.classList.add("visible");
+  hiddenMessage.classList.remove("hidden");
+  hiddenMessage.classList.add("visible");
   console.log("Mr. Duck is watching you!");
 };
 
-// function to hide the displayed message
+// function to hide the displayed hiddenMessage
 const hideDisplayed = () => {
-  message.classList.remove("visible");
-  message.classList.add("hidden");
+  hiddenMessage.classList.remove("visible");
+  hiddenMessage.classList.add("hidden");
 };
 
 logo.addEventListener("mouseover", displayHidden);
@@ -26,6 +26,7 @@ const loadMessages = () => {
   const savedMessages = JSON.parse(localStorage.getItem("messages")) || [];
   // Get and parse messages from localStorage, or use an empty array if it's empty
   savedMessages.forEach((msg) => {
+    messages.classList.remove("hidden");
     const msgElement = document.createElement("li");
     msgElement.textContent = msg;
     messages.appendChild(msgElement); // Append the list item to the messages div
@@ -38,6 +39,7 @@ const addMessage = () => {
   const inputValue = textInput.value;
   // check if input is empty
   if (inputValue.trim() !== "") {
+    messages.classList.remove("hidden");
     const savedMessages = JSON.parse(localStorage.getItem("messages")) || [];
     // add new message to the array of saved messages
     savedMessages.push(inputValue);
@@ -51,5 +53,12 @@ const addMessage = () => {
   }
 };
 
+// add event listener when enter is pressed
+textInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    addMessage();
+  }
+});
 button.addEventListener("click", addMessage);
 window.addEventListener("load", loadMessages);
+// window.localStorage.clear();

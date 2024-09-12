@@ -1,0 +1,225 @@
+.duck {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: beige;
+}
+.userBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.userBtn button {
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+#logo {
+  width: 120px;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;
+  min-height: 20px; /* Prevents layout jumping by reserving space for the hidden message */
+}
+#welcomeMessage {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 300px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 10px;
+  word-wrap: break-word;
+  line-height: 1.2;
+}
+
+/* Triangle at the bottom-right corner */
+#welcomeMessage::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 7px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  border-left: 0;
+  transform: scaleX(-1);
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 45px;
+}
+#hiddenMessage {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  height: 20px;
+  margin: 0;
+}
+#forceAnswer {
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.hidden {
+  visibility: hidden; /* Use visibility instead of display to prevent layout jumps */
+}
+.visible {
+  display: block;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+#textInput {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid rgba(128, 128, 128, 0.388);
+  width: 20rem;
+}
+#sendButton {
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+#deleteButton {
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+  cursor: pointer;
+}
+.messagesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#messages {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 22rem;
+  background-color: #f9f9f9;
+  list-style-type: none;
+}
+
+#messages li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  word-wrap: break-word;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#messages li:hover {
+  transform: translateY(-3px);
+  background-color: #f1f1f1;
+}
+
+#messages li:last-child {
+  margin-bottom: 0;
+}
+/* user.html styles */
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: beige;
+}
+.logo {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.logoWelcome {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  right: 80px;
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 57px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  word-wrap: break-word;
+  line-height: 1.2;
+}
+.logoWelcome::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  right: 6px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  border-left: 0;
+  transform: scaleX(-1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.submitButton {
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.submitButton:disabled {
+  pointer-events: none;
+  background-color: grey;
+  border: 2px solid grey;
+}

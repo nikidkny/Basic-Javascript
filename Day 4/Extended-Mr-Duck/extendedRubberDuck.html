@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="extendedRubberDuck.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="duck">
+    <header>
+      <div class="userBtn">
+        <button onclick="window.location.href='user.html'">User</button>
+      </div>
+      <div class="headerContainer">
+        <div>
+          <p id="welcomeMessage"></p>
+        </div>
+        <div class="logoContainer">
+          <img id="logo" src="rubber_duck.png" alt="logo" />
+          <h2>Mr. Duck</h2>
+        </div>
+        <div class="container">
+          <div class="hiddenMsgContainer">
+            <p id="hiddenMessage" class="hidden">A-boo!</p>
+          </div>
+          <button id="forceAnswer">Force answer</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="inputContainer">
+      <input id="textInput" type="text" placeholder="Tell me something fun!" />
+      <button id="sendButton">Send</button>
+      <button id="deleteButton">Delete all message</button>
+    </div>
+    <div class="messagesContainer">
+      <div id="messages" class="hidden"></div>
+    </div>
+  </body>
+</html>

@@ -20,8 +20,8 @@ The exercises are organized by day, reflecting the course structure. Each day co
 
   - `Exercise - Show / Hide Elements`
   - `Exercise - Mr. Duck`
-    - Extra: Hover effect
-    - Extra: localStorage
+    - `Extra: Hover effect`
+    - `Extra: localStorage`
   - `Extra Exercise`
 
 - **Day 3**: Control Structures & Logic
@@ -31,8 +31,12 @@ The exercises are organized by day, reflecting the course structure. Each day co
   - `Exercise - Highlighted Numbers`
   - `Exercise - Higher or Lower Game`
 
-- **Day 4**: (Coming Soon)
-  - Exercises will be added...
+- **Day 4**: Advanced Topics - Dates, Forms, Async & HTTP
+  - `Extended Mr Duck`
+    - `Excercise - Date`
+    - `Excercise - Forms`
+    - `Excercise - Async`
+    - `Excercise - Forms`
 
 ## Topics Covered by Day
 
@@ -69,6 +73,17 @@ The exercises are organized by day, reflecting the course structure. Each day co
 - **Games & Logic**
   - Game logic using loops and conditions
 
-### **Day 4** - (TBD)
+### **Day 4** - Advanced Topics: Date, Forms, Async & HTTP
 
-- Placeholder for additional exercises and topics
+- **Date Object**
+  - Working with dates and times
+  - Formatting and manipulating date values
+- **Forms**
+  - Capturing user input
+  - Form validation (HTML & JavaScript)
+- **Asynchronous JavaScript**
+  - Promises and async/await syntax
+- **HTTP Requests**
+  - Using the Fetch API to make HTTP requests
+  - HTTP methods (GET, PUT, POST, DELETE etc.)
+  - Handling responses and errors

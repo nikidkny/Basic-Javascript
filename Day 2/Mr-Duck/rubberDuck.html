@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="rubberDuck.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="duck">
+    <header>
+      <div class="headerContainer">
+        <div class="logoContainer">
+          <img id="logo" src="rubber_duck.png" alt="logo" />
+        </div>
+        <div class="container">
+          <div class="hiddenMsgContainer">
+            <p id="hiddenMessage" class="hidden">A-boo!</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="inputContainer">
+      <input id="textInput" type="text" placeholder="Tell me something fun!" />
+      <button id="button">Send</button>
+    </div>
+    <div class="messagesContainer">
+      <div id="messages" class="hidden"></div>
+    </div>
+  </body>
+</html>
