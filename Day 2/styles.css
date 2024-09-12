@@ -20,9 +20,11 @@ body {
 #message {
   text-decoration: underline;
 }
+/* Create a CSS class .hidden that sets display: none to hide the message. */
 .hidden {
   display: none;
 }
+/* Add another class .visible that sets display: block to show the message. */
 .visible {
   display: block;
 }

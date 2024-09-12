@@ -2,6 +2,7 @@ const logo = document.getElementById("logo");
 const hiddenMessage = document.getElementById("hiddenMessage");
 const messages = document.getElementById("messages");
 
+// Add Easter egg Hover effect on Mr. Duck
 // function to show the hidden hiddenMessage
 const displayHidden = () => {
   hiddenMessage.classList.remove("hidden");

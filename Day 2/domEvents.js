@@ -12,5 +12,6 @@ const hideMessage = () => {
   message.classList.remove("visible");
   message.classList.add("hidden");
 };
+// Add event listeners to the button for mouseover and mouseout events that toggle the visibility of the message.
 button.addEventListener("mouseover", showMessage);
 button.addEventListener("mouseleave", hideMessage);
